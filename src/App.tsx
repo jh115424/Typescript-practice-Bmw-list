@@ -9,6 +9,7 @@ import './App.css'
     id: 1,
     name: 'BMW 3 Series',
     price: 55000,
+    image: './public/images/bmws.png',
  
   },
   {
@@ -40,13 +41,12 @@ const [activateBmwList, setActivateBmwList] = useState< BmwList | null>(null)
       <h1 className="title">BMW Info List</h1>
       <section className="car-list">
         <h3>All BMW Info</h3>
-        <div> <b>Name:</b>{activateBmwList?.name}</div>
+        {/* <div> <b>Name:</b>{activateBmwList?.name}</div> */}
       <ol>
         {bmws.map((bmws => <li key={bmws.id} onClick={() => {
           setActivateBmwList(bmws);
         }}>{bmws.name}</li>))}
       </ol>
-      <h3>My BMW List</h3>
       </section>
       <section className='my-list'>
         <h3>My List</h3> 
@@ -55,6 +55,8 @@ const [activateBmwList, setActivateBmwList] = useState< BmwList | null>(null)
         </div>
         <br></br>
         <b>Price:</b>{activateBmwList?.price}
+        <b>As shown below:</b>{activateBmwList?.image}
+
        
   
 
