@@ -1,23 +1,24 @@
 {
-    "BmwList": [
-        {
-          "idMeal": 1,
-          "name": "BMW X1 Series",
-          "price": "$55,000"
-        
-       
-        },
-        {
-          "id": 2,
-          "name": "BMW X2 Series",
-          "price": "$68,000"
-       
-        },
-        {
-            "id": 3,
-            "name": "BMW X3 Series",
-            "price": "$75,000"
-        }
-   
-     ]
+  "BmwList": [
+    {
+      "id": 1,
+      "name": "BMW X1 Series",
+      "price": "$55,000"
+    },
+    {
+      "id": 2,
+      "name": "BMW X2 Series",
+      "price": "$68,000"
+    },
+    {
+      "id": 3,
+      "name": "BMW X3 Series",
+      "price": "$75,000"
+    },
+    {
+      "id": 4,
+      "name": "BMW M Series",
+      "price": "$62,000"
+      }
+  ]
 }

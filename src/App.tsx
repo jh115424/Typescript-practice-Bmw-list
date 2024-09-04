@@ -1,34 +1,34 @@
 import { useState } from 'react'
 import { BmwList } from './BmwList'
-
-
+import './App.css'
 
 
 
  const bmws: BmwList[] = [
-  {id: 1,
+  {
+    id: 1,
     name: 'BMW 3 Series',
-   
-   price: 55000
+    price: 55000,
  
-   
   },
-   {
+  {
     id: 2, 
     name: 'BMW 5 Series',
     price: 68000
-   
-    
-   },
-   {
+  },
+  {
     id: 3, 
     name: 'BMW 7 Series',
     price: 75000
+  },
+  {
+    id: 4,
+    name: "BMW M Series",
+    price: 80000
+    }
 
-   }
-  
 ]
-const getAllBmws = () => fetch('http://localhost:3000/bmws')
+const getAllBmws = () => fetch('http://localhost:3000/BmwList')
 .then(response => response.json())
 getAllBmws().then(bmws => console.log(bmws))
 
@@ -37,7 +37,7 @@ const [activateBmwList, setActivateBmwList] = useState< BmwList | null>(null)
   return (
     <>
 
-      <h1>BMW Info List</h1>
+      <h1 className="title">BMW Info List</h1>
       <section className="car-list">
         <h3>All BMW Info</h3>
         <div> <b>Name:</b>{activateBmwList?.name}</div>

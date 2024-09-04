@@ -5,6 +5,7 @@ export type BmwList = {
   price: number;
 
 
+
 };
 
 
